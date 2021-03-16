@@ -1,25 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{% if title %}
-	<title>Holme Blog - {{title}}</title>
-	{% else %}
-	<title>Home Blog</title>
-	{% endif %}
-</head>
-<body>
-	<h1>Ini Adalah Home</h1>
-	||||||||||||||||||||||||
-	{% for tampil in kirim %}
-	<h3>{{tampil.author}}</h3>
-	<h3>{{tampil.title}}</h3>
-	<h3>{{tampil.tanggal}}</h3>
-	<h3>{{tampil.content}}</h3>
-	<p>-----------------------</p>
-	{% endfor %}
-	<br>
-	<P>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Amet corrupti eaque molestias dolores, incidunt dignissimos architecto, quam veniam eveniet sed, dicta consectetur, harum vero libero! Sint eum, quis facilis, suscipit libero alias eos iusto officia nostrum est distinctio necessitatibus similique consequatur omnis reprehenderit sapiente inventore? Dolor beatae ut alias, molestias molestiae, voluptatum veritatis fuga rerum, accusantium a, perspiciatis iure. Unde molestias accusantium nam reprehenderit molestiae, optio, perspiciatis, dolores vero quidem obcaecati, quos exercitationem est nesciunt ratione iure repellat expedita iusto rem eum delectus provident mollitia placeat! Consequatur laboriosam cum atque ullam fugit vel iure nostrum odit reiciendis adipisci amet porro sint, impedit, repellat quia velit voluptatem ipsum, in nemo quae aliquam iste. Neque nobis dolores quas quam quod nesciunt praesentium, quia facilis hic ipsa nam sapiente reprehenderit, quibusdam magni perspiciatis eius ipsam! Voluptatem amet quos similique deleniti molestiae sed sint cum. Deserunt sapiente voluptas iure explicabo fugiat eos, accusantium consectetur suscipit optio, nam quam sunt maxime dolore nemo architecto fugit? Sunt ipsa fugiat porro impedit hic iste id accusantium, suscipit corporis odio labore harum cupiditate praesentium nihil veritatis eaque veniam modi consequatur possimus perspiciatis voluptas. Numquam hic doloribus facere dolores ipsa sit eaque porro eligendi. Soluta expedita sint ipsa aperiam.</P>
-</body>
-</html>
+{% extends "blog/base.html" %}
+{% block content %}
+    {% for tampil in kirim %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{tampil.author}}</a>
+              <small class="text-muted">{{tampil.tanggal}}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{tampil.title}}</a></h2>
+            <p class="article-content">{{tampil.content}}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
