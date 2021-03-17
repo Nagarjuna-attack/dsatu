@@ -1,0 +1,9 @@
+{% extends "blog/base.html" %}
+{% block content %}
+		<div class="form-group">
+			<h1 class="alert alert-danger text-center">You Have been logout..!</h1>
+			<div class="border-bottom-top pt-3 text-center">
+				<small class="text-muted "><a class="ml-2" href="{% url 'login' %}">Log in again</a></small>
+			</div>
+		</div>
+{% endblock %}
