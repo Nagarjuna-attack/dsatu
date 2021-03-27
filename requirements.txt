@@ -14,7 +14,6 @@ httplib2==0.11.3
 idna==2.6
 keyring==17.1.1
 keyrings.alt==3.1.1
-louis==3.8.0
 musicbrainzngs==0.6
 mutagen==1.40.0
 netaddr==0.8.0
