@@ -8,7 +8,6 @@ distro==1.3.0
 Django==3.1.7
 django-crispy-forms==1.11.1
 entrypoints==0.3
-evillimiter==1.5.0
 feedparser==5.2.1
 gunicorn==20.1.0
 httplib2==0.11.3
