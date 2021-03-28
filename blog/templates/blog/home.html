@@ -6,6 +6,7 @@
           <div class="media-body">
             <div class="article-metadata">
               <a class="mr-2" href="{% url 'user-post' tampil.author.username %}">{{tampil.author}}</a>
+              <br><br>
               <small class="text-muted">{{tampil.tanggal|date:'l, F Y g:i a'}}</small>
             </div>
             <h2><a class="article-title" href="{% url 'post-detail' tampil.id %}">{{tampil.title}}</a></h2>
