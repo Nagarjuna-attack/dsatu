@@ -36,7 +36,6 @@ pycurl==7.43.0.6
 PyGObject==3.38.0
 pyinotify==0.9.6
 PySimpleSOAP==1.16.2
-python-apt==2.1.7
 python-debian==0.1.35
 python-debianbts==2.8.2
 pytz==2021.1
