@@ -25,8 +25,8 @@ SECRET_KEY = '7fd3a74d97dd377a1e30dc3a508530bf5e520b0509dfd33d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = ['anarkis.herokuapp.com']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['anarkis.herokuapp.com']
+#ALLOWED_HOSTS = []
 
 
 # Application definition
