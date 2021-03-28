@@ -5,7 +5,9 @@
           <div class="media-body">
             <div class="article-metadata">
               <a class="mr-2" href="{% url 'user-post' object.author.username %}">{{object.author}}</a>
+            <div class="">
               <small class="text-muted">{{object.tanggal|date:'l, F Y g:i a'}}</small>
+            </div>
             </div>
             <h2 class="article-title">{{object.title}}</h2>
             <p class="article-content">{{object.content}}</p>
