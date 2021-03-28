@@ -1,1 +1,1 @@
-web: gunicorn dsatu.wsgi
+reminder: python3 src/quickstart.py
