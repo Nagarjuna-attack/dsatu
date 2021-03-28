@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'b!h%^^k!)ji&3t4+$lrqv)z4ffos=cnc$ve$56difyqkkr(up2'
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = '7fd3a74d97dd377a1e30dc3a508530bf5e520b0509dfd33d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['anarkis.herokuapp.com']
-#ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['anarkis.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition

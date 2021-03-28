@@ -16,7 +16,7 @@
         </article>
     {% endfor %}
     <div class="row">
-      <div class="col-md text-center mb-3">
+      <div class="col-md text-center mb-5">
         {% if is_paginated %}
 
           {% if page_obj.has_previous %}
@@ -39,5 +39,8 @@
 
         {% endif %}    
       </div>
-    </div>  
+      <div class="col-md-12 bg-dark mb-3 pt-1 text-center">
+              <p>Get Your Attitude</p>
+            </div> 
+    </div>
 {% endblock content %}
