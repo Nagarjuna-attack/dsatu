@@ -1,1 +1,1 @@
-web: gunicorn app:dsatu
+web: gunicorn dsatu.wsgi
