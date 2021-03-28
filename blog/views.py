@@ -9,7 +9,8 @@ from .models import Post
 def home(request):
 	konteks = {
 		'kirim':Post.objects.all(),
-		'title':'Home'
+		'title':'Home',
+		'kirim':Post.objects.order_by('-tanggal')[:6]
 	}
 	return render(request,'blog/home.html',konteks)
 
@@ -40,7 +41,7 @@ class PostDetailView(DetailView):
 
 class PostCreateView(LoginRequiredMixin, CreateView):
 	model = Post
-	fields = ['title','content']
+	fields = ['title','url','content','isi']
 
 	def form_valid(self, form):
 		form.instance.author = self.request.user
@@ -49,7 +50,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 	model = Post
-	fields = ['title','content']
+	fields = ['title','url','content','isi']
 
 	def form_valid(self, form):
 		form.instance.author = self.request.user
