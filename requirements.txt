@@ -1,5 +1,4 @@
 appdirs==1.4.4
-apt-xapian-index==0.49
 asgiref==3.3.1
 asn1crypto==0.24.0
 Brlapi==0.8.2
